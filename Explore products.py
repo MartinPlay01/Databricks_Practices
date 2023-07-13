@@ -1,4 +1,11 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC ## products.csv Dataset of AdventureWorks
+# MAGIC #### Uploading Data from: 
+# MAGIC https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/23/adventureworks/products.csv
+
+# COMMAND ----------
+
 df1 = spark.read.format("csv").option("header", "true").load("dbfs:/FileStore/shared_uploads/xlab-txz-998@xtremelabs.us/products_1_.csv")
 
 # COMMAND ----------
